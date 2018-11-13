@@ -1,4 +1,4 @@
-package pokemons;
+import pokemons.Bulbasaur;
 
 public class Main {
 
