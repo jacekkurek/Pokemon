@@ -19,6 +19,7 @@ public abstract class Pokemon {
         this.attackPoints = AP;
         this.defensePoints = DP;
         this.maxHP = maxHP;
+        this.currentHP = maxHP;
     }
 
 
@@ -57,7 +58,7 @@ public abstract class Pokemon {
     public void getAttacked(int dmg) {
         dmg -= (int) (defensePoints / 7);
         if (currentHP > dmg) {
-            currentHP = -dmg;
+            currentHP -= dmg;
         } else {
             currentHP = 0;
             deadInfo();
