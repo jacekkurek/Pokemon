@@ -8,7 +8,7 @@ public enum PokemonType {
 
     private String typeName;
 
-    private PokemonType (String name){
+    PokemonType(String name){
         this.typeName = name;
     }
 
